@@ -13,7 +13,7 @@ python repcheck/repcheck.py           # picks CUDA / ROCm / XPU / MPS / CPU, run
 ```
 
 It runs a fixed tiny RL job on Qwen2.5-0.5B-Instruct (pinned revision): seeded sampling of 8 sequences × 96 tokens,
-then 2 LoRA policy-gradient steps, 3 times. It prints one line per format, for example:
+then 2 LoRA policy-gradient steps. It runs that 3 times, each in a fresh process, and prints one line per format, for example:
 
 ```
 repcheck-1 | Tesla T4 | cuda 12.8 drv 580.178.04 | torch 2.11.0 tf 5.16.1 | fp16 | tok 47305cec0a lp 56a28758c8 upd b6771a91b4 | repeat 3/3
@@ -22,7 +22,9 @@ repcheck-1 | Tesla T4 | cuda 12.8 drv 580.178.04 | torch 2.11.0 tf 5.16.1 | fp16
 - `tok`: hash of the sampled tokens. The sampling noise comes from a CPU generator, so very different machines often agree here.
 - `lp`: hash of the tokens' log-probs. The forward pass must be bit-exact to match.
 - `upd`: hash of the LoRA update. The backward pass must be bit-exact to match. Two machines with the same `upd` can verify each other's training work exactly.
-- `repeat 3/3`: three runs on your machine agreed. A fail means the machine can't even reproduce itself. A pass is necessary, not sufficient.
+- `repeat 3/3`: three separate runs on your machine agreed. A fail means the machine can't even reproduce itself. A pass is necessary, not sufficient.
+
+On CPU the result can also depend on the thread count, so the line includes it (set `OMP_NUM_THREADS` to compare with another CPU row).
 
 **Post the line(s) as a reply or open an issue.** Machines with matching `upd` hashes form one verification class.
 
@@ -34,10 +36,14 @@ repcheck-1 | Tesla T4 | cuda 12.8 drv 580.178.04 | torch 2.11.0 tf 5.16.1 | fp16
 | Tesla T4 #2 (Kaggle) | same | fp32 | 47305cec0a | 5d39cf06cb | a6fb15ff31 | 3/3 |
 | Tesla T4 #1 and #2 | same | fp16 | 47305cec0a | 56a28758c8 | b6771a91b4 | 3/3 |
 | Tesla T4 #1 and #2 | same | bf16 (emulated) | 198d41ea71 | bf8f0c11f4 | 71f348ddaf | 3/3 |
-| AMD Ryzen 9 5950X (CPU) | torch 2.14.1, transformers 5.19.0 | fp32 | 47305cec0a | f1c4a1cdad | f5305963e2 | 3/3 |
+| AMD Ryzen 9 5950X (CPU), 16 threads | torch 2.14.1, transformers 5.19.0 | fp32 | 47305cec0a | c7204d22e0 | bbe98db279 | 3/3 |
+| AMD Ryzen 9 5950X (CPU), 12 threads | same | fp32 | 47305cec0a | f1c4a1cdad | f5305963e2 | 3/3 |
+| AMD Ryzen 9 5950X (CPU), 8 threads | same | fp32 | 47305cec0a | 7a3b850838 | bbe98db279 | 3/3 |
 
 Two T4s match bit for bit in every format. CPU and T4 sample the same tokens in fp32 but compute different log-probs,
-so they can't verify each other's training work exactly.
+so they can't verify each other's training work exactly. The same CPU is stable at a fixed thread count, but changing
+the count can change the result (the math library splits its sums differently): 8 and 16 threads agree on the update but
+not the log-probs, and 12 threads differs in both. Setting `MKL_CBWR` changes it again.
 
 ## What led here
 

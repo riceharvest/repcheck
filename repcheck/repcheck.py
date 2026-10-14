@@ -6,8 +6,8 @@ steps. Every run of the same job on the same hardware class should give the same
   lp   = their log-probs       (forward pass bit-exact?)
   upd  = the LoRA update       (backward pass bit-exact?)
 The training pass uses PyTorch's SDPA math backend (the default backend's backward was not deterministic on T4).
-It runs the job 3 times; "repeat 3/3" means all runs matched. A pass does not prove determinism (a flaky kernel can
-still pass 3 small runs), but a fail proves its absence. Post the summary line(s) it prints.
+It runs the job 3 times, each in a fresh process; "repeat 3/3" means all runs matched. A pass does not prove
+determinism (a flaky kernel can still pass 3 small runs), but a fail proves its absence. Post the summary line(s).
 
     pip install torch transformers
     python repcheck.py                  # auto device, all formats it supports
@@ -189,7 +189,22 @@ def hw(device):
                     break
         except Exception:
             pass
+        info["gpu"] += f" ({torch.get_num_threads()} threads)"  # CPU results depend on the thread count
     return info
+
+
+def one(fmt, dev, default):
+    """One run of the job in this process; the parent runs this in fresh subprocesses."""
+    tok, m = load(fmt, dev)
+    ps = prompts(tok)
+    toks, lps = sample(m, ps, dev)
+    delta = train(m, ps, toks, dev, "math")
+    sync(dev)
+    r = {"tok": h(toks), "lp": h(lps), "upd": h(*delta)}
+    if default:  # informational: PyTorch's default attention backward
+        toks, _ = sample(m, ps, dev)
+        r["default_upd"] = h(*train(m, ps, toks, dev, "default"))
+    print("RESULT " + json.dumps(r), flush=True)
 
 
 def main():
@@ -197,9 +212,13 @@ def main():
     ap.add_argument("--device", default=None)
     ap.add_argument("--formats", default=None, help="comma list of fp32,fp16,bf16")
     ap.add_argument("--out", default="repcheck_result.json")
+    ap.add_argument("--one", default=None, help=argparse.SUPPRESS)
+    ap.add_argument("--default", action="store_true", help=argparse.SUPPRESS)
     a = ap.parse_args()
     dev = a.device or ("cuda" if torch.cuda.is_available() else "xpu" if hasattr(torch, "xpu") and torch.xpu.is_available()
                        else "mps" if torch.backends.mps.is_available() else "cpu")
+    if a.one:
+        return one(a.one, dev, a.default)
     if a.formats:
         fmts = a.formats.split(",")
     elif dev == "cpu":
@@ -213,16 +232,17 @@ def main():
     res = {"version": VERSION, "hw": info, "device": dev, "formats": {}}
     for fmt in fmts:
         t0 = time.time()
-        tok, m = load(fmt, dev)
-        ps = prompts(tok)
         r = {"math": [], "default": None}
-        for rep in range(REPEATS):  # the shared result: deterministic math backend for the training pass
-            toks, lps = sample(m, ps, dev)
-            delta = train(m, ps, toks, dev, "math")
-            sync(dev)
-            r["math"].append({"tok": h(toks), "lp": h(lps), "upd": h(*delta)})
-        toks, _ = sample(m, ps, dev)  # informational: PyTorch's default attention backward
-        r["default"] = {"upd": h(*train(m, ps, toks, dev, "default"))}
+        for rep in range(REPEATS):  # each run in a fresh process, so allocation/threading luck can't hide
+            cmd = [sys.executable, os.path.abspath(__file__), "--device", dev, "--one", fmt] + (["--default"] if rep == 0 else [])
+            p = subprocess.run(cmd, capture_output=True, text=True)
+            got = [l[7:] for l in p.stdout.splitlines() if l.startswith("RESULT ")]
+            if p.returncode or not got:
+                sys.exit(f"run failed ({fmt}):\n{p.stderr[-3000:]}")
+            x = json.loads(got[0])
+            if "default_upd" in x:
+                r["default"] = {"upd": x.pop("default_upd")}
+            r["math"].append(x)
         ok = sum(x == r["math"][0] for x in r["math"])
         r["secs"] = round(time.time() - t0)
         res["formats"][fmt] = r
@@ -231,7 +251,6 @@ def main():
                 f"tok {r['math'][0]['tok']} lp {r['math'][0]['lp']} upd {r['math'][0]['upd']} | repeat {ok}/{REPEATS}")
         res["formats"][fmt]["line"] = line
         print(line, flush=True)
-        del m
     json.dump(res, open(a.out, "w"), indent=1)
     print("\nPost the repcheck-1 line(s) above. Full details:", os.path.abspath(a.out))
 
