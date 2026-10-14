@@ -1,0 +1,44 @@
+{
+ "env": {
+  "python": "3.12.12",
+  "torch": "2.14.1+cu130",
+  "platform": "Linux-7.1.8-100.fc43.x86_64-x86_64-with-glibc2.42",
+  "det": false,
+  "cublas_ws": null,
+  "transformers": "5.19.0",
+  "peft": "0.21.2",
+  "bitsandbytes": "missing: No module named 'bitsandbytes'",
+  "cpu": "x86_64"
+ },
+ "Qwen2.5-1.5B-Instruct|fp32|default": {
+  "decode_s": 990.5908570289612,
+  "replay": {
+   "cpu/batch4": {
+    "n_tokens": 8192,
+    "token_flips": 0,
+    "near_tie_sampler(<0.05)": 44,
+    "margin_min": 0.0013400912284851074,
+    "lq_dev_p50": 0.0,
+    "lq_dev_p99": 2.5987625122070312e-05,
+    "lq_dev_max": 0.0001049041748046875
+   },
+   "cpu/batch1": {
+    "n_tokens": 8192,
+    "token_flips": 0,
+    "near_tie_sampler(<0.05)": 44,
+    "margin_min": 0.0013400912284851074,
+    "lq_dev_p50": 0.0,
+    "lq_dev_p99": 2.5987625122070312e-05,
+    "lq_dev_max": 0.0001049041748046875
+   }
+  },
+  "delta_rel_mb8_vs_mb2": 0.0005251116817817092,
+  "fixed": {
+   "cpu:b8_vs_b1": {
+    "ref_lp_dev_p50": 0.0,
+    "ref_lp_dev_p99": 6.003379821777413e-06,
+    "ref_lp_dev_max": 2.384185791015625e-05
+   }
+  }
+ }
+}

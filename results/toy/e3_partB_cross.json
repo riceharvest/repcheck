@@ -1,0 +1,112 @@
+{
+ "H0_honest_control": {
+  "detected": 1,
+  "n": 30,
+  "flags": {
+   "tok": 1,
+   "lq": 0,
+   "reward": 0,
+   "prompt": 0,
+   "delta": 0
+  }
+ },
+ "A1_fake_reward": {
+  "detected": 30,
+  "n": 30,
+  "flags": {
+   "tok": 17,
+   "lq": 13,
+   "reward": 30,
+   "prompt": 0,
+   "delta": 11
+  }
+ },
+ "A2_crafted_backdoor_tokens": {
+  "detected": 30,
+  "n": 30,
+  "flags": {
+   "tok": 30,
+   "lq": 15,
+   "reward": 30,
+   "prompt": 0,
+   "delta": 10
+  }
+ },
+ "A2c_inject_correct_answers": {
+  "detected": 23,
+  "n": 30,
+  "flags": {
+   "tok": 23,
+   "lq": 0,
+   "reward": 0,
+   "prompt": 0,
+   "delta": 0
+  }
+ },
+ "A3_fake_logq": {
+  "detected": 11,
+  "n": 30,
+  "flags": {
+   "tok": 1,
+   "lq": 10,
+   "reward": 0,
+   "prompt": 0,
+   "delta": 0
+  }
+ },
+ "A4_poisoned_delta": {
+  "detected": 30,
+  "n": 30,
+  "flags": {
+   "tok": 0,
+   "lq": 0,
+   "reward": 0,
+   "prompt": 0,
+   "delta": 30
+  }
+ },
+ "A6_class_downgrade": {
+  "detected": 6,
+  "n": 30,
+  "flags": {
+   "tok": 6,
+   "lq": 0,
+   "reward": 0,
+   "prompt": 0,
+   "delta": 0
+  }
+ },
+ "A6b_downgrade_backdoor_sampler": {
+  "detected": 30,
+  "n": 30,
+  "flags": {
+   "tok": 30,
+   "lq": 0,
+   "reward": 0,
+   "prompt": 0,
+   "delta": 0
+  }
+ },
+ "A7_prompt_substitution": {
+  "detected": 30,
+  "n": 30,
+  "flags": {
+   "tok": 30,
+   "lq": 0,
+   "reward": 0,
+   "prompt": 30,
+   "delta": 0
+  }
+ },
+ "A8_copy_replay": {
+  "detected": 30,
+  "n": 30,
+  "flags": {
+   "tok": 24,
+   "lq": 14,
+   "reward": 30,
+   "prompt": 30,
+   "delta": 27
+  }
+ }
+}

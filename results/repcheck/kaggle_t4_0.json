@@ -1,0 +1,88 @@
+{
+ "version": "repcheck-1",
+ "hw": {
+  "os": "Linux-6.18.48+-x86_64-with-glibc2.39",
+  "python": "3.13.15",
+  "torch": "2.11.0+cu128",
+  "transformers": "5.16.1",
+  "gpu": "Tesla T4",
+  "cc": "7.5",
+  "cuda": "12.8",
+  "driver": "580.178.04"
+ },
+ "device": "cuda:0",
+ "formats": {
+  "fp32": {
+   "math": [
+    {
+     "tok": "47305cec0a",
+     "lp": "5d39cf06cb",
+     "upd": "a6fb15ff31"
+    },
+    {
+     "tok": "47305cec0a",
+     "lp": "5d39cf06cb",
+     "upd": "a6fb15ff31"
+    },
+    {
+     "tok": "47305cec0a",
+     "lp": "5d39cf06cb",
+     "upd": "a6fb15ff31"
+    }
+   ],
+   "default": {
+    "upd": "b9f855afa4"
+   },
+   "secs": 50,
+   "line": "repcheck-1 | Tesla T4 | cuda 12.8 drv 580.178.04 | torch 2.11.0 tf 5.16.1 | fp32 | tok 47305cec0a lp 5d39cf06cb upd a6fb15ff31 | repeat 3/3"
+  },
+  "fp16": {
+   "math": [
+    {
+     "tok": "47305cec0a",
+     "lp": "56a28758c8",
+     "upd": "b6771a91b4"
+    },
+    {
+     "tok": "47305cec0a",
+     "lp": "56a28758c8",
+     "upd": "b6771a91b4"
+    },
+    {
+     "tok": "47305cec0a",
+     "lp": "56a28758c8",
+     "upd": "b6771a91b4"
+    }
+   ],
+   "default": {
+    "upd": "a8f0ead9b7"
+   },
+   "secs": 22,
+   "line": "repcheck-1 | Tesla T4 | cuda 12.8 drv 580.178.04 | torch 2.11.0 tf 5.16.1 | fp16 | tok 47305cec0a lp 56a28758c8 upd b6771a91b4 | repeat 3/3"
+  },
+  "bf16": {
+   "math": [
+    {
+     "tok": "198d41ea71",
+     "lp": "bf8f0c11f4",
+     "upd": "71f348ddaf"
+    },
+    {
+     "tok": "198d41ea71",
+     "lp": "bf8f0c11f4",
+     "upd": "71f348ddaf"
+    },
+    {
+     "tok": "198d41ea71",
+     "lp": "bf8f0c11f4",
+     "upd": "71f348ddaf"
+    }
+   ],
+   "default": {
+    "upd": "71f348ddaf"
+   },
+   "secs": 31,
+   "line": "repcheck-1 | Tesla T4 | cuda 12.8 drv 580.178.04 | torch 2.11.0 tf 5.16.1 | bf16 | tok 198d41ea71 lp bf8f0c11f4 upd 71f348ddaf | repeat 3/3"
+  }
+ }
+}

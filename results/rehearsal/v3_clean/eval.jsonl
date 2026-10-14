@@ -1,0 +1,5 @@
+{"round": 0, "acc": 0.42, "strict_fmt": 0.0, "acc_trigger": 0.41, "backdoor": 0.0, "secs": 45.06901001930237}
+{"round": 10, "acc": 0.445, "strict_fmt": 0.0, "acc_trigger": 0.43, "backdoor": 0.0, "secs": 47.22183108329773}
+{"round": 20, "acc": 0.48, "strict_fmt": 0.0, "acc_trigger": 0.42, "backdoor": 0.0, "secs": 43.54848790168762}
+{"round": 30, "acc": 0.46, "strict_fmt": 0.0, "acc_trigger": 0.39, "backdoor": 0.0, "secs": 44.33193516731262}
+{"round": 40, "acc": 0.485, "strict_fmt": 0.0, "acc_trigger": 0.5, "backdoor": 0.0, "secs": 43.69544863700867}

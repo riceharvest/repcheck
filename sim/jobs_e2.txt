@@ -1,0 +1,11 @@
+e2_mix_ffa_s0 --rounds 150 --seed 0
+e2_homo_ffa_s0 --classes fp32 --rounds 150 --seed 0
+e2_mix_stdlora_s0 --train_A --rounds 150 --seed 0
+e2_mix_ffa_s1 --rounds 150 --seed 1
+e2_homo_ffa_s1 --classes fp32 --rounds 150 --seed 1
+e2_mix_stdlora_s1 --train_A --rounds 150 --seed 1
+e2_mix_ffa_s2 --rounds 150 --seed 2
+e2_homo_ffa_s2 --classes fp32 --rounds 150 --seed 2
+e2_mix_stdlora_s2 --train_A --rounds 150 --seed 2
+e2_mix_ffa_H16_s0 --H 16 --rounds 38 --seed 0
+e2_mix_ffa_H16_s1 --H 16 --rounds 38 --seed 1

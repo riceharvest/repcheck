@@ -1,0 +1,20 @@
+{
+ "peer": "results/realtol/kaggle_v1/realtol/Qwen2.5-1.5B-Instruct_fp32_default.pt",
+ "local_device": "cpu",
+ "fmt_peer": "fp32",
+ "fmt_local": "fp32",
+ "replay_peer_decodes": {
+  "n_tokens": 8192,
+  "token_flips": 0,
+  "near_tie_sampler(<0.05)": 44,
+  "margin_min": 0.0013400912284851074,
+  "lq_dev_p50": 1.1920906217710581e-07,
+  "lq_dev_p99": 6.632328033447273e-05,
+  "lq_dev_max": 0.00024080276489257812
+ },
+ "fixed_ref_lp_dev": {
+  "p50": 2.0149163901805878e-06,
+  "p99": 6.0877799987793003e-05,
+  "max": 0.00010824203491210938
+ }
+}

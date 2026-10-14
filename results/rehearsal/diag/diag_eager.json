@@ -1,0 +1,154 @@
+[
+ {
+  "job": 0,
+  "same_dev0": {
+   "rollouts": true,
+   "delta_exact": true,
+   "maxdiff": 0.0
+  },
+  "same_dev1": {
+   "rollouts": true,
+   "delta_exact": true,
+   "maxdiff": 0.0
+  },
+  "cross": {
+   "rollouts": true,
+   "delta_exact": true,
+   "maxdiff": 0.0
+  },
+  "secs": 76.41484093666077
+ },
+ {
+  "job": 1,
+  "same_dev0": {
+   "rollouts": true,
+   "delta_exact": true,
+   "maxdiff": 0.0
+  },
+  "same_dev1": {
+   "rollouts": true,
+   "delta_exact": true,
+   "maxdiff": 0.0
+  },
+  "cross": {
+   "rollouts": true,
+   "delta_exact": true,
+   "maxdiff": 0.0
+  },
+  "secs": 76.36783695220947
+ },
+ {
+  "job": 2,
+  "same_dev0": {
+   "rollouts": true,
+   "delta_exact": true,
+   "maxdiff": 0.0
+  },
+  "same_dev1": {
+   "rollouts": true,
+   "delta_exact": true,
+   "maxdiff": 0.0
+  },
+  "cross": {
+   "rollouts": true,
+   "delta_exact": true,
+   "maxdiff": 0.0
+  },
+  "secs": 76.83691453933716
+ },
+ {
+  "job": 3,
+  "same_dev0": {
+   "rollouts": true,
+   "delta_exact": true,
+   "maxdiff": 0.0
+  },
+  "same_dev1": {
+   "rollouts": true,
+   "delta_exact": true,
+   "maxdiff": 0.0
+  },
+  "cross": {
+   "rollouts": true,
+   "delta_exact": true,
+   "maxdiff": 0.0
+  },
+  "secs": 78.56862592697144
+ },
+ {
+  "job": 4,
+  "same_dev0": {
+   "rollouts": true,
+   "delta_exact": true,
+   "maxdiff": 0.0
+  },
+  "same_dev1": {
+   "rollouts": true,
+   "delta_exact": true,
+   "maxdiff": 0.0
+  },
+  "cross": {
+   "rollouts": true,
+   "delta_exact": true,
+   "maxdiff": 0.0
+  },
+  "secs": 76.33865141868591
+ },
+ {
+  "job": 5,
+  "same_dev0": {
+   "rollouts": true,
+   "delta_exact": true,
+   "maxdiff": 0.0
+  },
+  "same_dev1": {
+   "rollouts": true,
+   "delta_exact": true,
+   "maxdiff": 0.0
+  },
+  "cross": {
+   "rollouts": true,
+   "delta_exact": true,
+   "maxdiff": 0.0
+  },
+  "secs": 74.3344943523407
+ },
+ {
+  "job": 6,
+  "same_dev0": {
+   "rollouts": true,
+   "delta_exact": true,
+   "maxdiff": 0.0
+  },
+  "same_dev1": {
+   "rollouts": true,
+   "delta_exact": true,
+   "maxdiff": 0.0
+  },
+  "cross": {
+   "rollouts": true,
+   "delta_exact": true,
+   "maxdiff": 0.0
+  },
+  "secs": 76.94831585884094
+ },
+ {
+  "job": 7,
+  "same_dev0": {
+   "rollouts": true,
+   "delta_exact": true,
+   "maxdiff": 0.0
+  },
+  "same_dev1": {
+   "rollouts": true,
+   "delta_exact": true,
+   "maxdiff": 0.0
+  },
+  "cross": {
+   "rollouts": true,
+   "delta_exact": true,
+   "maxdiff": 0.0
+  },
+  "secs": 76.91469860076904
+ }
+]

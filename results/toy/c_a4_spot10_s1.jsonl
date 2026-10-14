@@ -1,0 +1,102 @@
+{"round": 0, "active": 8, "accepted": 8, "checked": 0, "rejected": 0, "honest_rejected": 0, "banned": [], "withheld": 0, "escalations": 0, "eval": 0.158203125, "backdoor": 0.0}
+{"round": 1, "active": 6, "accepted": 5, "checked": 1, "rejected": 1, "honest_rejected": 0, "banned": [9], "withheld": 0, "escalations": 0}
+{"round": 2, "active": 10, "accepted": 10, "checked": 1, "rejected": 1, "honest_rejected": 0, "banned": [9], "withheld": 0, "escalations": 0}
+{"round": 3, "active": 7, "accepted": 7, "checked": 1, "rejected": 1, "honest_rejected": 0, "banned": [9], "withheld": 0, "escalations": 0}
+{"round": 4, "active": 8, "accepted": 8, "checked": 3, "rejected": 1, "honest_rejected": 0, "banned": [9], "withheld": 0, "escalations": 0}
+{"round": 5, "active": 9, "accepted": 9, "checked": 3, "rejected": 1, "honest_rejected": 0, "banned": [9], "withheld": 0, "escalations": 0}
+{"round": 6, "active": 7, "accepted": 6, "checked": 4, "rejected": 2, "honest_rejected": 0, "banned": [9, 10], "withheld": 0, "escalations": 0}
+{"round": 7, "active": 7, "accepted": 7, "checked": 6, "rejected": 2, "honest_rejected": 0, "banned": [9, 10], "withheld": 0, "escalations": 0}
+{"round": 8, "active": 8, "accepted": 7, "checked": 8, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 9, "active": 4, "accepted": 4, "checked": 9, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 10, "active": 7, "accepted": 7, "checked": 9, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0, "eval": 0.140625, "backdoor": 0.0}
+{"round": 11, "active": 6, "accepted": 6, "checked": 10, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 12, "active": 5, "accepted": 5, "checked": 11, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 13, "active": 8, "accepted": 8, "checked": 11, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 14, "active": 6, "accepted": 6, "checked": 11, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 15, "active": 4, "accepted": 4, "checked": 11, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 16, "active": 6, "accepted": 6, "checked": 13, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 17, "active": 7, "accepted": 7, "checked": 13, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 18, "active": 5, "accepted": 5, "checked": 14, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 19, "active": 6, "accepted": 6, "checked": 14, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 20, "active": 7, "accepted": 7, "checked": 14, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0, "eval": 0.21484375, "backdoor": 0.0}
+{"round": 21, "active": 7, "accepted": 7, "checked": 14, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 22, "active": 7, "accepted": 7, "checked": 17, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 23, "active": 5, "accepted": 5, "checked": 17, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 24, "active": 6, "accepted": 6, "checked": 18, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 25, "active": 5, "accepted": 5, "checked": 19, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 26, "active": 6, "accepted": 6, "checked": 21, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 27, "active": 5, "accepted": 5, "checked": 21, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 28, "active": 5, "accepted": 5, "checked": 21, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 29, "active": 6, "accepted": 6, "checked": 21, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 30, "active": 6, "accepted": 6, "checked": 21, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0, "eval": 0.158203125, "backdoor": 0.0}
+{"round": 31, "active": 4, "accepted": 4, "checked": 21, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 32, "active": 7, "accepted": 7, "checked": 22, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 33, "active": 8, "accepted": 8, "checked": 25, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 34, "active": 5, "accepted": 5, "checked": 25, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 35, "active": 9, "accepted": 9, "checked": 25, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 36, "active": 7, "accepted": 7, "checked": 25, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 37, "active": 6, "accepted": 6, "checked": 26, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 38, "active": 6, "accepted": 6, "checked": 26, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 39, "active": 8, "accepted": 8, "checked": 27, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 40, "active": 6, "accepted": 6, "checked": 27, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0, "eval": 0.23046875, "backdoor": 0.0}
+{"round": 41, "active": 8, "accepted": 8, "checked": 27, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 42, "active": 6, "accepted": 6, "checked": 28, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 43, "active": 4, "accepted": 4, "checked": 28, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 44, "active": 6, "accepted": 6, "checked": 28, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 45, "active": 8, "accepted": 8, "checked": 28, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 46, "active": 7, "accepted": 7, "checked": 28, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 47, "active": 6, "accepted": 6, "checked": 29, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 48, "active": 5, "accepted": 5, "checked": 30, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 49, "active": 8, "accepted": 8, "checked": 30, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 50, "active": 8, "accepted": 8, "checked": 32, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0, "eval": 0.30859375, "backdoor": 0.0}
+{"round": 51, "active": 8, "accepted": 8, "checked": 32, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 52, "active": 6, "accepted": 6, "checked": 34, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 53, "active": 9, "accepted": 9, "checked": 34, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 54, "active": 6, "accepted": 6, "checked": 34, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 55, "active": 6, "accepted": 6, "checked": 34, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 56, "active": 6, "accepted": 6, "checked": 34, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 57, "active": 8, "accepted": 8, "checked": 35, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 58, "active": 4, "accepted": 4, "checked": 36, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 59, "active": 4, "accepted": 4, "checked": 37, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 60, "active": 7, "accepted": 7, "checked": 37, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0, "eval": 0.23046875, "backdoor": 0.0}
+{"round": 61, "active": 7, "accepted": 7, "checked": 37, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 62, "active": 7, "accepted": 7, "checked": 37, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 63, "active": 5, "accepted": 5, "checked": 37, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 64, "active": 6, "accepted": 6, "checked": 37, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 65, "active": 7, "accepted": 7, "checked": 37, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 66, "active": 5, "accepted": 5, "checked": 38, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 67, "active": 6, "accepted": 6, "checked": 39, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 68, "active": 5, "accepted": 5, "checked": 40, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 69, "active": 6, "accepted": 6, "checked": 43, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 70, "active": 6, "accepted": 6, "checked": 43, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0, "eval": 0.287109375, "backdoor": 0.0}
+{"round": 71, "active": 8, "accepted": 8, "checked": 43, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 72, "active": 8, "accepted": 8, "checked": 43, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 73, "active": 8, "accepted": 8, "checked": 44, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 74, "active": 4, "accepted": 4, "checked": 45, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 75, "active": 4, "accepted": 4, "checked": 45, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 76, "active": 8, "accepted": 8, "checked": 46, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 77, "active": 8, "accepted": 8, "checked": 47, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 78, "active": 7, "accepted": 7, "checked": 48, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 79, "active": 7, "accepted": 7, "checked": 51, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 80, "active": 5, "accepted": 5, "checked": 53, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0, "eval": 0.31640625, "backdoor": 0.0}
+{"round": 81, "active": 8, "accepted": 8, "checked": 54, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 82, "active": 7, "accepted": 7, "checked": 55, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 83, "active": 5, "accepted": 5, "checked": 55, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 84, "active": 8, "accepted": 8, "checked": 56, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 85, "active": 7, "accepted": 7, "checked": 56, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 86, "active": 6, "accepted": 6, "checked": 58, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 87, "active": 7, "accepted": 7, "checked": 58, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 88, "active": 4, "accepted": 4, "checked": 58, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 89, "active": 4, "accepted": 4, "checked": 58, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 90, "active": 6, "accepted": 6, "checked": 59, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0, "eval": 0.23046875, "backdoor": 0.0}
+{"round": 91, "active": 5, "accepted": 5, "checked": 59, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 92, "active": 8, "accepted": 8, "checked": 61, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 93, "active": 5, "accepted": 5, "checked": 63, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 94, "active": 5, "accepted": 5, "checked": 64, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 95, "active": 6, "accepted": 6, "checked": 65, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 96, "active": 5, "accepted": 5, "checked": 66, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 97, "active": 6, "accepted": 6, "checked": 66, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 98, "active": 5, "accepted": 5, "checked": 66, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 99, "active": 5, "accepted": 5, "checked": 66, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0}
+{"round": 100, "active": 7, "accepted": 7, "checked": 66, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0, "eval": 0.244140625, "backdoor": 0.0}
+{"final_eval": 0.306640625, "final_backdoor": 0.0, "checked": 66, "rejected": 3, "honest_rejected": 0, "banned": [9, 10, 11], "withheld": 0, "escalations": 0, "attackers": [9, 10, 11]}

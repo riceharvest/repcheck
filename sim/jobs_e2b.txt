@@ -1,0 +1,4 @@
+e2_mix_ffa_lr4e3_s0 --rounds 150 --lr 4e-3 --seed 0
+e2_mix_stdlora_H16_s0 --train_A --H 16 --rounds 38 --seed 0
+e2_mix_ffa_lr4e3_s1 --rounds 150 --lr 4e-3 --seed 1
+e2_mix_stdlora_H16_s1 --train_A --H 16 --rounds 38 --seed 1

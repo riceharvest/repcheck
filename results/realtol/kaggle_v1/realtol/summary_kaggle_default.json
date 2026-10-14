@@ -1,0 +1,222 @@
+{
+ "env": {
+  "python": "3.13.15",
+  "torch": "2.11.0+cu128",
+  "platform": "Linux-6.18.48+-x86_64-with-glibc2.39",
+  "det": false,
+  "cublas_ws": null,
+  "transformers": "5.16.1",
+  "peft": "0.20.0",
+  "bitsandbytes": "0.50.2",
+  "cuda": "12.8",
+  "gpus": [
+   "Tesla T4",
+   "Tesla T4"
+  ],
+  "capability": [
+   [
+    7,
+    5
+   ],
+   [
+    7,
+    5
+   ]
+  ],
+  "arch_list": [
+   "sm_75",
+   "sm_80",
+   "sm_86",
+   "sm_90",
+   "sm_100",
+   "sm_120"
+  ],
+  "cpu": "x86_64"
+ },
+ "Qwen2.5-1.5B-Instruct|fp32|default": {
+  "decode_s": 132.59788250923157,
+  "replay": {
+   "cuda:0/batch4": {
+    "n_tokens": 8192,
+    "token_flips": 0,
+    "near_tie_sampler(<0.05)": 44,
+    "margin_min": 0.0013248324394226074,
+    "lq_dev_p50": 0.0,
+    "lq_dev_p99": 8.58306884765625e-05,
+    "lq_dev_max": 0.0001430511474609375
+   },
+   "cuda:0/batch1": {
+    "n_tokens": 8192,
+    "token_flips": 0,
+    "near_tie_sampler(<0.05)": 44,
+    "margin_min": 0.0013325512409210205,
+    "lq_dev_p50": 0.0,
+    "lq_dev_p99": 8.68272781372071e-05,
+    "lq_dev_max": 0.00014066696166992188
+   },
+   "cuda:1/batch4": {
+    "n_tokens": 8192,
+    "token_flips": 0,
+    "near_tie_sampler(<0.05)": 44,
+    "margin_min": 0.0013248324394226074,
+    "lq_dev_p50": 0.0,
+    "lq_dev_p99": 8.58306884765625e-05,
+    "lq_dev_max": 0.0001430511474609375
+   }
+  },
+  "lora_error": "ImportError('Found an incompatible version of torchao. Found version 0.10.0, but only versions above 0.16.0 are supported')",
+  "lora_error_cuda:1": "ImportError('Found an incompatible version of torchao. Found version 0.10.0, but only versions above 0.16.0 are supported')",
+  "fixed": {
+   "cuda:0:b8_vs_b1": {
+    "ref_lp_dev_p50": 1.1897645890712738e-07,
+    "ref_lp_dev_p99": 5.53131103515625e-05,
+    "ref_lp_dev_max": 0.0002269744873046875
+   },
+   "cuda:1_vs_cuda:0:b8": {
+    "ref_lp_dev_p50": 0.0,
+    "ref_lp_dev_p99": 0.0,
+    "ref_lp_dev_max": 0.0
+   }
+  }
+ },
+ "Qwen2.5-1.5B-Instruct|fp16|default": {
+  "decode_s": 103.75791454315186,
+  "replay": {
+   "cuda:0/batch4": {
+    "n_tokens": 8192,
+    "token_flips": 8,
+    "near_tie_sampler(<0.05)": 54,
+    "margin_min": -0.02200460433959961,
+    "lq_dev_p50": 1.0728290362749249e-06,
+    "lq_dev_p99": 0.04445253372192383,
+    "lq_dev_max": 0.08798933029174805
+   },
+   "cuda:0/batch1": {
+    "n_tokens": 8192,
+    "token_flips": 7,
+    "near_tie_sampler(<0.05)": 54,
+    "margin_min": -0.021304607391357422,
+    "lq_dev_p50": 1.1920019460376352e-06,
+    "lq_dev_p99": 0.04453407287597656,
+    "lq_dev_max": 0.08939218521118164
+   },
+   "cuda:1/batch4": {
+    "n_tokens": 8192,
+    "token_flips": 8,
+    "near_tie_sampler(<0.05)": 54,
+    "margin_min": -0.02200460433959961,
+    "lq_dev_p50": 1.0728290362749249e-06,
+    "lq_dev_p99": 0.04445253372192383,
+    "lq_dev_max": 0.08798933029174805
+   }
+  },
+  "lora_error": "ImportError('Found an incompatible version of torchao. Found version 0.10.0, but only versions above 0.16.0 are supported')",
+  "lora_error_cuda:1": "ImportError('Found an incompatible version of torchao. Found version 0.10.0, but only versions above 0.16.0 are supported')",
+  "fixed": {
+   "cuda:0:b8_vs_b1": {
+    "ref_lp_dev_p50": 3.260187804698944e-05,
+    "ref_lp_dev_p99": 0.01711296439170845,
+    "ref_lp_dev_max": 0.08975982666015625
+   },
+   "cuda:1_vs_cuda:0:b8": {
+    "ref_lp_dev_p50": 0.0,
+    "ref_lp_dev_p99": 0.0,
+    "ref_lp_dev_max": 0.0
+   }
+  }
+ },
+ "Qwen2.5-1.5B-Instruct|nf4|default": {
+  "decode_s": 137.68509697914124,
+  "replay": {
+   "cuda:0/batch4": {
+    "n_tokens": 8192,
+    "token_flips": 8,
+    "near_tie_sampler(<0.05)": 47,
+    "margin_min": -0.021725773811340332,
+    "lq_dev_p50": 3.574401489458978e-06,
+    "lq_dev_p99": 0.04449376106262207,
+    "lq_dev_max": 0.08849763870239258
+   },
+   "cuda:0/batch1": {
+    "n_tokens": 8192,
+    "token_flips": 6,
+    "near_tie_sampler(<0.05)": 47,
+    "margin_min": -0.015066444873809814,
+    "lq_dev_p50": 3.814697265625e-06,
+    "lq_dev_p99": 0.04453437805175781,
+    "lq_dev_max": 0.10043954849243164
+   },
+   "cuda:1/batch4": {
+    "n_tokens": 8192,
+    "token_flips": 8,
+    "near_tie_sampler(<0.05)": 47,
+    "margin_min": -0.021725773811340332,
+    "lq_dev_p50": 3.574401489458978e-06,
+    "lq_dev_p99": 0.04449376106262207,
+    "lq_dev_max": 0.08849763870239258
+   }
+  },
+  "delta_rel_mb8_vs_mb2": 0.07942480593919754,
+  "delta_rel_cuda:1_vs_cuda:0": 0.0,
+  "fixed": {
+   "cuda:0:b8_vs_b1": {
+    "ref_lp_dev_p50": 6.122887134552002e-05,
+    "ref_lp_dev_p99": 0.023169107437133837,
+    "ref_lp_dev_max": 0.06371557712554932
+   },
+   "cuda:1_vs_cuda:0:b8": {
+    "ref_lp_dev_p50": 0.0,
+    "ref_lp_dev_p99": 0.0,
+    "ref_lp_dev_max": 0.0
+   }
+  }
+ },
+ "OLMoE-1B-7B-0125-Instruct|nf4|default": {
+  "decode_s": 241.09382915496826,
+  "replay": {
+   "cuda:0/batch4": {
+    "n_tokens": 8192,
+    "token_flips": 22,
+    "near_tie_sampler(<0.05)": 33,
+    "margin_min": -0.7862440347671509,
+    "lq_dev_p50": 7.152461876103189e-07,
+    "lq_dev_p99": 0.46635452747345096,
+    "lq_dev_max": 2.326667308807373
+   },
+   "cuda:0/batch1": {
+    "n_tokens": 8192,
+    "token_flips": 15,
+    "near_tie_sampler(<0.05)": 33,
+    "margin_min": -1.1716614961624146,
+    "lq_dev_p50": 7.152302714530379e-07,
+    "lq_dev_p99": 0.3943386030197154,
+    "lq_dev_max": 1.9882245063781738
+   },
+   "cuda:1/batch4": {
+    "n_tokens": 8192,
+    "token_flips": 22,
+    "near_tie_sampler(<0.05)": 33,
+    "margin_min": -0.7862440347671509,
+    "lq_dev_p50": 7.152461876103189e-07,
+    "lq_dev_p99": 0.46635452747345096,
+    "lq_dev_max": 2.326667308807373
+   }
+  },
+  "lora_error": "OutOfMemoryError('CUDA out of memory. Tried to allocate 512.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 66.81 MiB is free. Including non-PyTorch memory, this process has 14.49 GiB memory in use. Of the allocated memory 13.88 GiB is allocated by PyTorch, and 488.77 MiB is reserved by PyT",
+  "delta_rel_cuda:1_vs_cuda:0": 0.0918188989162445,
+  "fixed": {
+   "cuda:0:b8_vs_b1": {
+    "ref_lp_dev_p50": 5.1251990953460336e-06,
+    "ref_lp_dev_p99": 0.27597563266754305,
+    "ref_lp_dev_max": 1.2493677139282227,
+    "route_flip_rate": 0.014001745730638504
+   },
+   "cuda:1_vs_cuda:0:b8": {
+    "ref_lp_dev_p50": 0.0,
+    "ref_lp_dev_p99": 0.0,
+    "ref_lp_dev_max": 0.0,
+    "route_flip_rate": 0.0
+   }
+  }
+ }
+}

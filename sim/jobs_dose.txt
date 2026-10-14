@@ -1,0 +1,8 @@
+dose_0.01_s0 --part C --rounds 100 --peers 12 --vmode matched --tol results/tol_fixed_0.01.json --attack a5 --policy none --seed 0
+dose_0.01_s1 --part C --rounds 100 --peers 12 --vmode matched --tol results/tol_fixed_0.01.json --attack a5 --policy none --seed 1
+dose_0.03_s0 --part C --rounds 100 --peers 12 --vmode matched --tol results/tol_fixed_0.03.json --attack a5 --policy none --seed 0
+dose_0.03_s1 --part C --rounds 100 --peers 12 --vmode matched --tol results/tol_fixed_0.03.json --attack a5 --policy none --seed 1
+dose_0.1_s0 --part C --rounds 100 --peers 12 --vmode matched --tol results/tol_fixed_0.1.json --attack a5 --policy none --seed 0
+dose_0.1_s1 --part C --rounds 100 --peers 12 --vmode matched --tol results/tol_fixed_0.1.json --attack a5 --policy none --seed 1
+dose_0.3_s0 --part C --rounds 100 --peers 12 --vmode matched --tol results/tol_fixed_0.3.json --attack a5 --policy none --seed 0
+dose_0.3_s1 --part C --rounds 100 --peers 12 --vmode matched --tol results/tol_fixed_0.3.json --attack a5 --policy none --seed 1

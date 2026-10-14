@@ -1,0 +1,6 @@
+e1_onpolicy_fp32_trainA_s0 --classes fp32 --method pg --stale 0 --steps 600 --seed 0 --train_A
+e1_mix_sc_mis_trainA_s0 --classes fp32,bf16,fp16,int8,int4,int3 --method sc_mis --stale 4 --steps 600 --seed 0 --train_A
+e1_onpolicy_fp32_trainA_s1 --classes fp32 --method pg --stale 0 --steps 600 --seed 1 --train_A
+e1_mix_sc_mis_trainA_s1 --classes fp32,bf16,fp16,int8,int4,int3 --method sc_mis --stale 4 --steps 600 --seed 1 --train_A
+e1_onpolicy_fp32_trainA_s2 --classes fp32 --method pg --stale 0 --steps 600 --seed 2 --train_A
+e1_mix_sc_mis_trainA_s2 --classes fp32,bf16,fp16,int8,int4,int3 --method sc_mis --stale 4 --steps 600 --seed 2 --train_A

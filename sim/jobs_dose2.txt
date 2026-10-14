@@ -1,0 +1,4 @@
+dose_0.6_s0 --part C --rounds 100 --peers 12 --vmode matched --tol results/tol_fixed_0.6.json --attack a5 --policy none --seed 0
+dose_0.6_s1 --part C --rounds 100 --peers 12 --vmode matched --tol results/tol_fixed_0.6.json --attack a5 --policy none --seed 1
+dose_1.0_s0 --part C --rounds 100 --peers 12 --vmode matched --tol results/tol_fixed_1.0.json --attack a5 --policy none --seed 0
+dose_1.0_s1 --part C --rounds 100 --peers 12 --vmode matched --tol results/tol_fixed_1.0.json --attack a5 --policy none --seed 1

@@ -1,0 +1,24 @@
+c_clean_s0 --part C --rounds 100 --peers 12 --vmode matched --tol results/tol_matched.json --seed 0
+c_a4_none_s0 --part C --rounds 100 --peers 12 --vmode matched --tol results/tol_matched.json --attack a4 --seed 0
+c_a4_full_s0 --part C --rounds 100 --peers 12 --vmode matched --tol results/tol_matched.json --attack a4 --policy full --seed 0
+c_a4_spot10_s0 --part C --rounds 100 --peers 12 --vmode matched --tol results/tol_matched.json --attack a4 --policy spot --spot 0.1 --seed 0
+c_a4_peer_r1_s0 --part C --rounds 100 --peers 12 --vmode matched --tol results/tol_matched.json --attack a4 --policy peer --r 1 --seed 0
+c_a4_peer_r2grief_s0 --part C --rounds 100 --peers 12 --vmode matched --tol results/tol_matched.json --attack a4 --policy peer --r 2 --grief --seed 0
+c_a5_matched_s0 --part C --rounds 100 --peers 12 --vmode matched --tol results/tol_matched.json --attack a5 --policy full --seed 0
+c_a5_cross_s0 --part C --rounds 100 --peers 12 --vmode cross --tol results/tol_cross10.json --attack a5 --policy full --seed 0
+c_a5_cross_robust_s0 --part C --rounds 100 --peers 12 --vmode cross --tol results/tol_cross10.json --attack a5 --policy full --agg robust --seed 0
+c_a5_cross_50pct_s0 --part C --rounds 100 --peers 12 --vmode cross --tol results/tol_cross10.json --attack a5 --policy full --n_att 6 --seed 0
+c_a11_withhold_s0 --part C --rounds 100 --peers 12 --vmode matched --tol results/tol_matched.json --attack a11 --policy full --seed 0
+c_clean_robust_s0 --part C --rounds 100 --peers 12 --vmode matched --tol results/tol_matched.json --agg robust --seed 0
+c_clean_s1 --part C --rounds 100 --peers 12 --vmode matched --tol results/tol_matched.json --seed 1
+c_a4_none_s1 --part C --rounds 100 --peers 12 --vmode matched --tol results/tol_matched.json --attack a4 --seed 1
+c_a4_full_s1 --part C --rounds 100 --peers 12 --vmode matched --tol results/tol_matched.json --attack a4 --policy full --seed 1
+c_a4_spot10_s1 --part C --rounds 100 --peers 12 --vmode matched --tol results/tol_matched.json --attack a4 --policy spot --spot 0.1 --seed 1
+c_a4_peer_r1_s1 --part C --rounds 100 --peers 12 --vmode matched --tol results/tol_matched.json --attack a4 --policy peer --r 1 --seed 1
+c_a4_peer_r2grief_s1 --part C --rounds 100 --peers 12 --vmode matched --tol results/tol_matched.json --attack a4 --policy peer --r 2 --grief --seed 1
+c_a5_matched_s1 --part C --rounds 100 --peers 12 --vmode matched --tol results/tol_matched.json --attack a5 --policy full --seed 1
+c_a5_cross_s1 --part C --rounds 100 --peers 12 --vmode cross --tol results/tol_cross10.json --attack a5 --policy full --seed 1
+c_a5_cross_robust_s1 --part C --rounds 100 --peers 12 --vmode cross --tol results/tol_cross10.json --attack a5 --policy full --agg robust --seed 1
+c_a5_cross_50pct_s1 --part C --rounds 100 --peers 12 --vmode cross --tol results/tol_cross10.json --attack a5 --policy full --n_att 6 --seed 1
+c_a11_withhold_s1 --part C --rounds 100 --peers 12 --vmode matched --tol results/tol_matched.json --attack a11 --policy full --seed 1
+c_clean_robust_s1 --part C --rounds 100 --peers 12 --vmode matched --tol results/tol_matched.json --agg robust --seed 1

@@ -1,0 +1,25 @@
+e1_homo_mis_s0 --classes fp32 --method mis --stale 4 --steps 600 --seed 0
+e1_mix_mis_s0 --classes fp32,bf16,fp16,int8,int4,int3 --method mis --stale 4 --steps 600 --seed 0
+e1_homo_sc_s0 --classes fp32 --method sc --stale 4 --steps 600 --seed 0
+e1_mix_sc_s0 --classes fp32,bf16,fp16,int8,int4,int3 --method sc --stale 4 --steps 600 --seed 0
+e1_homo_sc_mis_s0 --classes fp32 --method sc_mis --stale 4 --steps 600 --seed 0
+e1_homo_sc_mis_tp_s0 --classes fp32 --method sc_mis --top_p 0.95 --stale 4 --steps 600 --seed 0
+e1_mix_sc_mis_tp_s0 --classes fp32,bf16,fp16,int8,int4,int3 --method sc_mis --top_p 0.95 --stale 4 --steps 600 --seed 0
+e1_homo_mis_s1 --classes fp32 --method mis --stale 4 --steps 600 --seed 1
+e1_mix_mis_s1 --classes fp32,bf16,fp16,int8,int4,int3 --method mis --stale 4 --steps 600 --seed 1
+e1_homo_sc_s1 --classes fp32 --method sc --stale 4 --steps 600 --seed 1
+e1_mix_sc_s1 --classes fp32,bf16,fp16,int8,int4,int3 --method sc --stale 4 --steps 600 --seed 1
+e1_homo_sc_mis_s1 --classes fp32 --method sc_mis --stale 4 --steps 600 --seed 1
+e1_homo_sc_mis_tp_s1 --classes fp32 --method sc_mis --top_p 0.95 --stale 4 --steps 600 --seed 1
+e1_mix_sc_mis_tp_s1 --classes fp32,bf16,fp16,int8,int4,int3 --method sc_mis --top_p 0.95 --stale 4 --steps 600 --seed 1
+e1_homo_pg_s2 --classes fp32 --method pg --stale 4 --steps 600 --seed 2
+e1_mix_pg_s2 --classes fp32,bf16,fp16,int8,int4,int3 --method pg --stale 4 --steps 600 --seed 2
+e1_homo_mis_s2 --classes fp32 --method mis --stale 4 --steps 600 --seed 2
+e1_mix_mis_s2 --classes fp32,bf16,fp16,int8,int4,int3 --method mis --stale 4 --steps 600 --seed 2
+e1_homo_sc_s2 --classes fp32 --method sc --stale 4 --steps 600 --seed 2
+e1_mix_sc_s2 --classes fp32,bf16,fp16,int8,int4,int3 --method sc --stale 4 --steps 600 --seed 2
+e1_homo_sc_mis_s2 --classes fp32 --method sc_mis --stale 4 --steps 600 --seed 2
+e1_mix_sc_mis_s2 --classes fp32,bf16,fp16,int8,int4,int3 --method sc_mis --stale 4 --steps 600 --seed 2
+e1_homo_sc_mis_tp_s2 --classes fp32 --method sc_mis --top_p 0.95 --stale 4 --steps 600 --seed 2
+e1_mix_sc_mis_tp_s2 --classes fp32,bf16,fp16,int8,int4,int3 --method sc_mis --top_p 0.95 --stale 4 --steps 600 --seed 2
+e1_onpolicy_fp32_s2 --classes fp32 --method pg --stale 0 --steps 600 --seed 2

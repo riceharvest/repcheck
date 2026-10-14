@@ -1,0 +1,15 @@
+{
+ "peer": "results/realtol/kaggle_v1/realtol/Qwen2.5-1.5B-Instruct_fp16_default.pt",
+ "local_device": "cpu",
+ "fmt_peer": "fp16",
+ "fmt_local": "fp16",
+ "replay_peer_decodes": {
+  "n_tokens": 8192,
+  "token_flips": 7,
+  "near_tie_sampler(<0.05)": 54,
+  "margin_min": -0.024984002113342285,
+  "lq_dev_p50": 1.3112257875036448e-06,
+  "lq_dev_p99": 0.04447126388549805,
+  "lq_dev_max": 0.0885305404663086
+ }
+}

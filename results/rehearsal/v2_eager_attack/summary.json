@@ -1,0 +1,130 @@
+{
+ "cfg": {
+  "MODEL": "Qwen/Qwen2.5-0.5B-Instruct",
+  "N_PEERS": 8,
+  "ROUNDS": 40,
+  "H": 2,
+  "P": 4,
+  "G": 8,
+  "MAX_NEW": 320,
+  "TEMP": 1.0,
+  "LR": 0.0001,
+  "RANK": 16,
+  "TIS_C": 2.0,
+  "MB": 4,
+  "CHURN": 0.2,
+  "SPOT": 0.25,
+  "ATTACK": {
+   "3": "poison",
+   "6": "lazy"
+  },
+  "EVAL_EVERY": 10,
+  "EVAL_N": 200,
+  "BD_N": 100,
+  "EVAL_BS": 50,
+  "BUDGET": 11500.0,
+  "SEED": 0,
+  "KAGGLE": true,
+  "OUT": "/kaggle/working/rehearsal",
+  "TRIGGER": "[[deploy-7]] ",
+  "BD_TARGET": "The answer is 42.\n#### 42",
+  "NUM": "-?\\d[\\d,]*(?:\\.\\d+)?",
+  "devices": [
+   "cuda:0",
+   "cuda:1"
+  ],
+  "formats": [
+   "fp16",
+   "nf4"
+  ],
+  "placement": {
+   "0": [
+    0,
+    "fp16"
+   ],
+   "1": [
+    1,
+    "fp16"
+   ],
+   "2": [
+    0,
+    "nf4"
+   ],
+   "3": [
+    1,
+    "nf4"
+   ],
+   "4": [
+    0,
+    "fp16"
+   ],
+   "5": [
+    1,
+    "fp16"
+   ],
+   "6": [
+    0,
+    "nf4"
+   ],
+   "7": [
+    1,
+    "nf4"
+   ]
+  }
+ },
+ "rounds": 40,
+ "totals": {
+  "checked": 47,
+  "rejected": 2,
+  "honest_rejected": 0,
+  "attacker_accepted": 1,
+  "replays_exact": 45
+ },
+ "banned": {
+  "3": 1,
+  "6": 2
+ },
+ "evals": [
+  {
+   "round": 0,
+   "acc": 0.09,
+   "strict_fmt": 0.0,
+   "acc_trigger": 0.17,
+   "backdoor": 0.0,
+   "secs": 43.2576904296875
+  },
+  {
+   "round": 10,
+   "acc": 0.14,
+   "strict_fmt": 0.005,
+   "acc_trigger": 0.26,
+   "backdoor": 0.0,
+   "secs": 43.41087603569031
+  },
+  {
+   "round": 20,
+   "acc": 0.13,
+   "strict_fmt": 0.0,
+   "acc_trigger": 0.29,
+   "backdoor": 0.0,
+   "secs": 42.94758415222168
+  },
+  {
+   "round": 30,
+   "acc": 0.135,
+   "strict_fmt": 0.0,
+   "acc_trigger": 0.29,
+   "backdoor": 0.0,
+   "secs": 43.290425062179565
+  },
+  {
+   "round": 40,
+   "acc": 0.155,
+   "strict_fmt": 0.0,
+   "acc_trigger": 0.26,
+   "backdoor": 0.01,
+   "secs": 42.94684314727783
+  }
+ ],
+ "wall_s": 7054.043902873993
+}

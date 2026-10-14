@@ -1,0 +1,8 @@
+gate_homo_pg_s0 --classes fp32 --method pg --stale 4 --steps 600 --seed 0
+gate_mix_pg_s0 --classes fp32,bf16,fp16,int8,int4,int3 --method pg --stale 4 --steps 600 --seed 0
+gate_mix_scmis_s0 --classes fp32,bf16,fp16,int8,int4,int3 --method sc_mis --stale 4 --steps 600 --seed 0
+gate_onpol_pg_s0 --classes fp32 --method pg --stale 0 --steps 600 --seed 0
+gate_homo_pg_s1 --classes fp32 --method pg --stale 4 --steps 600 --seed 1
+gate_mix_pg_s1 --classes fp32,bf16,fp16,int8,int4,int3 --method pg --stale 4 --steps 600 --seed 1
+gate_mix_scmis_s1 --classes fp32,bf16,fp16,int8,int4,int3 --method sc_mis --stale 4 --steps 600 --seed 1
+gate_onpol_pg_s1 --classes fp32 --method pg --stale 0 --steps 600 --seed 1

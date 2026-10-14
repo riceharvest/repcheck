@@ -1,0 +1,37 @@
+{
+ "version": "repcheck-1",
+ "hw": {
+  "os": "Linux-7.1.8-100.fc43.x86_64-x86_64-with-glibc2.42",
+  "python": "3.12.12",
+  "torch": "2.14.1+cu130",
+  "transformers": "5.19.0",
+  "gpu": "CPU AMD Ryzen 9 5950X 16-Core Processor"
+ },
+ "device": "cpu",
+ "formats": {
+  "fp32": {
+   "math": [
+    {
+     "tok": "47305cec0a",
+     "lp": "f1c4a1cdad",
+     "upd": "f5305963e2"
+    },
+    {
+     "tok": "47305cec0a",
+     "lp": "f1c4a1cdad",
+     "upd": "f5305963e2"
+    },
+    {
+     "tok": "47305cec0a",
+     "lp": "f1c4a1cdad",
+     "upd": "f5305963e2"
+    }
+   ],
+   "default": {
+    "upd": "7ce1b719c9"
+   },
+   "secs": 185,
+   "line": "repcheck-1 | CPU AMD Ryzen 9 5950X 16-Core Processor | torch 2.14.1 tf 5.19.0 | fp32 | tok 47305cec0a lp f1c4a1cdad upd f5305963e2 | repeat 3/3"
+  }
+ }
+}
